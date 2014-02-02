@@ -3,6 +3,11 @@ body {
   padding : 20px 40px;
 }
 
+.toc a {
+  color: #7BA9BB;
+  font-size: 75%;
+}
+
 a {
   cursor : pointer;
 }
