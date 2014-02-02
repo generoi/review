@@ -15,6 +15,9 @@
   "bin": {
     "review": "./bin/review.js"
   },
+  "scripts": {
+    "install": "bash install.sh"
+  },
   "author": "Julian Gruber <julian@juliangruber.com>",
   "license": "MIT",
   "dependencies": {
@@ -23,6 +26,5 @@
     "express": "~3.0.6",
     "mkdirp": "~0.3.4",
     "span": "0.0.5",
-    "phantomjs": "~1.9.0-1"
   }
 }
