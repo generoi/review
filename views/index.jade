@@ -12,9 +12,15 @@ html
     else
       if settings.wait
         p Be patient, images will start appearing after #{settings.wait/1000}s. Refresh at will.
+
+    ul.toc
+      each url,title in sites
+        li
+          a(href="##{title.replace(/ /g, '-')}")= title
     
     each url, title in sites
       each resolution in resolutions
+        a(name="#{title.replace(/ /g, '-')}")
         h2= title
           span  #{resolution.name} 
           a.refresh ⟲
